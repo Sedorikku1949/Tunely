@@ -132,34 +132,55 @@ body {
   margin-left: 5px;
 }
 
-#navbar #suggestList {
+#navbar {
   overflow-y: hidden;
   overflow-x: auto;
 }
 
+#suggestList {
+  height: 95%;
+  overflow: scroll;
+}
 
 .suggestBox {
   color: #8f8f8f;
-}
-
-.suggestImageHeader {
+  background-color: #2D2D2D;
+  padding: 5px;
+  margin: 2px;
+  border-radius: 4px;
   display: flex;
-  
+  margin-bottom: 5px;
 }
 
-.suggestImageHeader p {
-  margin: 2px 2px 2px 5px;
-  padding: 2px;
+.suggestImageIcon img {
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  margin-right: 5px;
+  vertical-align: middle;
+  margin: 3px;
+} 
+
+.suggestImageContent {
+  margin-left: 3px;
+  line-height: 19px;
+}
+
+.suggestBox p {
+  margin: 2px 2px 2px 3px;
+  overflow: hidden;
+  font-size: 17px;
+  max-width: 138px;
   overflow: hidden;
 }
 
-
-.suggestImageHeaderIcon {
-  width: 50px;
-  height: 50px;
-  background: center;
-  background-size: 25px 25px;
-  background-repeat: none;
+.suggestBox .suggestBoxAuthor {
+  margin: 2px 2px 2px 8px;
+  overflow: hidden;
+  font-size: 12px;
+  max-width: 138px;
+  overflow: hidden;
+  color: #9f9f9f;
 }
 
 /* MAIN CONTAINER */
@@ -185,6 +206,30 @@ body {
 
 
 
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2D2D2D;
+  transition: background 0.25s ease;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8f8f8f;
+  transition: background 0.25s ease;
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 2px;
+  transition: background 0.25s ease;
+}
 
 
 
