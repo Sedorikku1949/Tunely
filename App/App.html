@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tunely</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="https://media.discordapp.net/attachments/927492275683078185/927492973799829514/vinyl-record.png" type="image/png" sizes="512x512" />
+  </head>
+  <body>
+    <div id="background"></div>
+    <div id="app-container">
+      <div class="box" id="navbar">
+        <div id="search-nav">
+          <div id="search-icon">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"/></svg>
+          </div>
+          <input placeholder="recherche" value="" minlength="1" maxlength="30">
+        </div>
+        <p id="suggest-navbar">Quelques suggestions :</p>
+        <div id="suggestList">
+          <div class="suggestBox">
+            <div class="suggestHeader">
+              <div class="suggestImageHeader">
+                <div class="suggestImageHeaderIcon">
+                  <img src="https://static.fnac-static.com/multimedia/Images/FR/NR/42/8e/79/7966274/1540-1/tsp20160419112440/Faded.jpg" width="50" height="50">
+                </div>
+                <p>Faded</p>
+              </div>
+            </div>
+            <div class="suggestBody">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- all others box are disabled -->
+      <div class="box" id="main-container" style="display: none">
+        bloup
+      </div>
+      <div class="box" id="accountAndPlayer" style="display: none">
+        blep
+      </div>
+    </div>
+    <p id="widthToLower">Nop, ton écran est trop petit !<p>
+    <script src="script.js"></script>
+  </body>
+</html>

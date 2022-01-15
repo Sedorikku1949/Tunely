@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+  /* COLORS */
+  --box-color: #121212;
+  --background: #121212;
+  --surface: #121212;
+  --error: #CF6679;
+  --primary: #39ace7;
+  --secondary: #751D1F;
+  --text-color: #FFFFFF;
+  /* OPACITY */
+  --text-high: 0.87;
+  --text-medium: 0.60;
+  --text-disabled: 0.38;
+}
+
+body {
+  background: url("https://cdn.hovia.com/app/uploads/Blue-Illustrated-Landscape-Mountains-Wallpaper-Mural.jpg");
+  color: var(--text-color);
+  font-family: 'Noto Sans', sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+#widthToLower {
+  display: none;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: color ease 0.25s, display ease-in 0.10s;
+}
+
+
+#background {
+  background: var(--background);
+  width: 100%;
+  height: 100%;
+  opacity: 0.64;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-height: 100vh;
+  display: flex;
+}
+
+#app-container {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#app-container .box {
+  background-color: var(--box-color);
+  opacity: 1;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+/* NAV LIST */
+#navbar {
+  height: 95%;
+  width: 18%;
+  min-width: 225px;
+}
+
+#search-nav {
+  background-color: #2D2D2D;
+  padding: 2px;
+  margin: 10px;
+  border-radius: 4px;
+  height: 34px;
+  display: flex;
+  transition: background 0.25s ease;
+  margin-bottom: 15px;
+}
+
+#search-nav:hover {
+  background-color: #3D3D3D;
+  transition: background 0.2s ease, color 0.3s ease-in-out, fill 0.2s ease-in;
+  color: #9f9f9f;
+  fill: #9a9a9a;
+}
+
+#search-nav:hover #search-icon, #search-nav input:active {
+  margin: 5px;
+}
+
+#search-nav:hover #search-icon svg, #search-nav input:active {
+  transform: scale(1.1);
+  transition: all 0.1s ease;
+}
+
+#search-nav #search-icon svg {
+  fill: #aaa;
+  height: 24px;
+  width: 24px;
+  transition: all 0.1s ease;
+}
+
+#search-nav #search-icon {
+  margin: 5px;
+}
+
+#search-nav input {
+  background: none;
+  border: #4c4c4c;
+  width: auto;
+  outline: none;
+  cursor: text;
+  caret-color: #8f8f8f;
+  color: #9e9e9e;
+}
+
+#search-nav input:active {
+  border: none;
+}
+
+#suggest-navbar {
+  margin-left: 5px;
+}
+
+#navbar #suggestList {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+
+.suggestBox {
+  color: #8f8f8f;
+}
+
+.suggestImageHeader {
+  display: flex;
+  
+}
+
+.suggestImageHeader p {
+  margin: 2px 2px 2px 5px;
+  padding: 2px;
+  overflow: hidden;
+}
+
+
+.suggestImageHeaderIcon {
+  width: 50px;
+  height: 50px;
+  background: center;
+  background-size: 25px 25px;
+  background-repeat: none;
+}
+
+/* MAIN CONTAINER */
+
+
+#main-container {
+  height: 95%;
+  width: 60%;
+  min-width: 200px;
+}
+
+
+
+/* ACCOUNT AND PLAYER BOX */
+
+
+#accountAndPlayer {
+  height: 95%;
+  width: 18%;
+  min-width: 200px;
+}
+
+
+
+
+
+
+
+
+
+/* MEDIA */
+
+@media (min-width: 630px) {
+  #widthToLower {
+    display: none;
+      transition: color ease 0.25s, display ease-in 0.10s;
+  }
+}
+
+@media (max-width: 630px) {
+  #app-container {
+    display: none;
+    transition: all ease-in 0.05s
+  }
+  #widthToLower {
+    display: inline;
+      transition: color ease 0.25s, display ease-in 0.10s;
+  }
+}
